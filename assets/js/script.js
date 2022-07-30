@@ -20,33 +20,25 @@ function generatePassword() {
       if (allowUpper===true) {
         possiblePw = possiblePw + upper;
       }
-  
       if (allowLower===true) {
         possiblePw = possiblePw + lower;
       }
-  
       if (allowNumber===true) {
         possiblePw = possiblePw + numbers;
       }
-  
       if (allowSpecial===true) {
         possiblePw = possiblePw + specials;
       }
-  
       var result = ""
-  
       if (possiblePw === "") {
         return "You must have some chracters in your password, please try again";
       }
-  
       possiblePw = possiblePw.split('')
-  
       for ( var i=0; i< pwLength; i++ ) {
-        result=
+        result =
           result + 
           possiblePw[Math.floor(Math.random() * possiblePw.length)];
-      }
-  
+        }
       return result;
     }
   
@@ -57,10 +49,8 @@ function generatePassword() {
   function writePassword() {
     var password = generatePassword();
     var passwordText = document.querySelector("#password");
-  
     passwordText.value = password;
-  
 }
 
-  // Add event listener to generate button
-  generateBtn.addEventListener("click", writePassword);
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
