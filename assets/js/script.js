@@ -1,10 +1,10 @@
 function generatePassword() {
     var possiblePw="";
   
-    var pwLength = window.prompt("How long do you want your generated password to be? (Must be between 8 and 32 characters)");
+    var pwLength = window.prompt("How long do you want your generated password to be? (Must be between 8 and 128 characters)");
   
     while (pwLength < 8 || pwLength > 128 || !Number.isInteger(Number(pwLength))) {
-        pwLength = window.prompt ("Password must be between 8 and 32 characters!")
+        pwLength = window.prompt ("Password must be between 8 and 128 characters!")
     }
   
     var upper = "ABCDEFGHIJKLMNOPQRSTUVXYZ";
