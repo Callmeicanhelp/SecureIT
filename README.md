@@ -8,4 +8,4 @@ This app is used to generate a random passowrd for our user when prompted for va
 
 GitHub deployed page: https://callmeicanhelp.github.io/password-generator/
 
-Screenshot: assets/images/1FD3A1AD-FBB4-4066-A8D1-9EE78EFB9307.jpeg
+![Screenshot](assets/images/1FD3A1AD-FBB4-4066-A8D1-9EE78EFB9307.jpeg)
