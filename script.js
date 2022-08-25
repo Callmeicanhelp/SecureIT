@@ -6,11 +6,12 @@ var specChars=["!#$%&'()*+,-./:;<=>?@[]^_`{|}~"];
 
 
 
-function newPass() {
+function generatePassword() {
   var passLength = window.prompt("Choose a password length between 8 and 100 characters.");
 
-  if (!Number.isInteger(Number(passLength)) || passLength > 100 || passLength < 8);
-  then (passLength = window.prompt("Try again. Choose a password length between 8 and 100 characters."));
+  if (!Number.isInteger(Number(passLength)) || passLength > 100 || passLength < 8) {
+    (passLength = window.prompt("Try again. Choose a password length between 8 and 100 characters."))
+  };
 
   var useUppercase = window.confirm("Will your password use uppercase letters?")
   var useULowercase = window.confirm("Will your password use lowercase letters?")
